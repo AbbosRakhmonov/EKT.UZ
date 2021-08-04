@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link href="./styles/themify-icons.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>EKT.UZ</title>
+  </head>
+  <body>
+    <!-- **Modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"
+                ><span class="ti-close text-light"></span
+              ></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              width="100%"
+              src="https://www.youtube-nocookie.com/embed/kOQ1UbnF5CY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+        />
+      </symbol>
+      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+        />
+      </symbol>
+      <symbol
+        id="exclamation-triangle-fill"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+        />
+      </symbol>
+    </svg>
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+      <svg
+        class="bi flex-shrink-0 mr-2"
+        width="24"
+        height="24"
+        role="img"
+        aria-label="Success:"
+      >
+        <use xlink:href="#check-circle-fill" />
+      </svg>
+      <div>Xabaringiz muvaffaqiyatli yuborildi</div>
+    </div>
+    <section id="header-section">
+      <header class="header">
+        <div class="container w-1107">
+          <div class="row">
+            <nav
+              class="navbar navbar-expand-lg navbar-light w-100"
+              data-aos="fade-down"
+            >
+              <a class="navbar-brand" href="index.html"
+                ><img src="./assets/images/logo.png" alt="Website Logo"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="burger-line line-1"></span>
+                <span class="burger-line line-2"></span>
+                <span class="burger-line line-3"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item home">
+                    <a class="nav-link" href="#header-section">Bosh sahifa</a>
+                  </li>
+                  <li class="nav-item infos">
+                    <a class="nav-link" href="#info-section">Ma'lumot</a>
+                  </li>
+                  <li class="nav-item products">
+                    <a class="nav-link" href="#products-section">Maxsulotlar</a>
+                  </li>
+                </ul>
+                <form class="header-form">
+                  <button type="submit" class="btn">
+                    <a href="#contact-section" class="nav-link">Bog`lanish</a>
+                    <span class="btn-icon ti-angle-right"></span>
+                  </button>
+                </form>
+              </div>
+            </nav>
+            <div class="header-content">
+              <h1
+                class="header-title"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                zoom meetings and webinars
+              </h1>
+              <span
+                class="d-block header-line"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="150"
+              ></span>
+              <p
+                class="header-text"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay=""
+              >
+                BookIt - Appointment & Booking Plugin for Consulting Theme
+              </p>
+              <button
+                class="btn play-btn"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+              >
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 330 330"
+                  style="enable-background: new 0 0 330 330"
+                  xml:space="preserve"
+                >
+                  <path
+                    id="XMLID_308_"
+                    d="M37.728,328.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999
+	c4.386-2.741,7.05-7.548,7.05-12.72c0-5.172-2.664-9.979-7.05-12.72L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4
+	C32.959,4.524,30,9.547,30,15v300C30,320.453,32.959,325.476,37.728,328.12z"
+                  />
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <section id="info-section">
+      <div class="container w-1107">
+        <div class="row align-items-center justify-content-center flex-wrap">
+          <div class="product-content col-lg-6 col-md-12">
+            <h1 class="product-title" data-aos="fade-right">
+              Create and manage online meetings
+            </h1>
+            <span class="line" data-aos="fade-right"></span>
+            <p class="product-info" data-aos="fade-right">
+              The best complete video conferencing plugin for your website.
+              eRoom is a free yet robust and reliable extension that enables
+              direct integration of the world’s leading video conferencing tool
+              Zoom with your WordPress website.
+            </p>
+          </div>
+          <div class="product-image col-lg-6 col-md-12" data-aos="fade-left">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/images/item-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/images/item-2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/images/item-3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products-section">
+      <div class="container w-1107">
+        <div class="row">
+          <h1 class="section-title" data-aos="zoom-in">Bizning Maxsulotlar</h1>
+          <span class="line" data-aos="fade-up"></span>
+          <div class="col-md-12">
+            <div class="row flex-row">
+              <div class="card" data-aos="fade-right">
+                <img
+                  src="./assets/images/p-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overflow-text">
+                  <div class="content-center">
+                    <h1 class="card-title">Product Name</h1>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Porro, id?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-left">
+                <img
+                  src="./assets/images/p-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overflow-text">
+                  <div class="content-center">
+                    <h1 class="card-title">Product Name</h1>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Porro, id?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-right">
+                <img
+                  src="./assets/images/p-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overflow-text">
+                  <div class="content-center">
+                    <h1 class="card-title">Product Name</h1>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Porro, id?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-left">
+                <img
+                  src="./assets/images/p-4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overflow-text">
+                  <div class="content-center">
+                    <h1 class="card-title">Product Name</h1>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Porro, id?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact-section">
+      <div class="container w-1107">
+        <div class="row flex-column">
+          <h1 class="footer-title" data-aos="zoom-in">Contact</h1>
+          <span class="line" data-aos="fade-up"></span>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <form>
+                  <div class="form-group" data-aos="fade-right">
+                    <label class="text-light" for="exampleInputEmail1"
+                      >F.I.O</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      aria-describedby="emailHelp"
+                      placeholder="Rustamov Jahongir"
+                    />
+                  </div>
+                  <div class="form-group" data-aos="fade-right">
+                    <label class="text-light" for="exampleInputPassword1"
+                      >E-mail</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Jahongir07@gmail.com"
+                    />
+                  </div>
+                  <div class="form-group" data-aos="fade-right">
+                    <label class="text-light" for="exampleFormControlTextarea1"
+                      >Xabar matni</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="fulltext"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-success w-100 send-btn"
+                    data-aos="fade-right"
+                  >
+                    Jo`natish
+                  </button>
+                </form>
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-4 mb-4">
+                  <div class="row">
+                    <ul class="navbar-nav flex-row">
+                      <li class="nav-item" data-aos="fade-right">
+                        <span class="icon"
+                          ><?xml version="1.0" encoding="iso-8859-1"?>
+                          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                          <svg
+                            version="1.1"
+                            id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 480.56 480.56"
+                            style="enable-background: new 0 0 480.56 480.56"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M365.354,317.9c-15.7-15.5-35.3-15.5-50.9,0c-11.9,11.8-23.8,23.6-35.5,35.6c-3.2,3.3-5.9,4-9.8,1.8
+                              c-7.7-4.2-15.9-7.6-23.3-12.2c-34.5-21.7-63.4-49.6-89-81c-12.7-15.6-24-32.3-31.9-51.1c-1.6-3.8-1.3-6.3,1.8-9.4
+                              c11.9-11.5,23.5-23.3,35.2-35.1c16.3-16.4,16.3-35.6-0.1-52.1c-9.3-9.4-18.6-18.6-27.9-28c-9.6-9.6-19.1-19.3-28.8-28.8
+                              c-15.7-15.3-35.3-15.3-50.9,0.1c-12,11.8-23.5,23.9-35.7,35.5c-11.3,10.7-17,23.8-18.2,39.1c-1.9,24.9,4.2,48.4,12.8,71.3
+                              c17.6,47.4,44.4,89.5,76.9,128.1c43.9,52.2,96.3,93.5,157.6,123.3c27.6,13.4,56.2,23.7,87.3,25.4c21.4,1.2,40-4.2,54.9-20.9
+                              c10.2-11.4,21.7-21.8,32.5-32.7c16-16.2,16.1-35.8,0.2-51.8C403.554,355.9,384.454,336.9,365.354,317.9z"
+                                />
+                                <path
+                                  d="M346.254,238.2l36.9-6.3c-5.8-33.9-21.8-64.6-46.1-89c-25.7-25.7-58.2-41.9-94-46.9l-5.2,37.1
+                              c27.7,3.9,52.9,16.4,72.8,36.3C329.454,188.2,341.754,212,346.254,238.2z"
+                                />
+                                <path
+                                  d="M403.954,77.8c-42.6-42.6-96.5-69.5-156-77.8l-5.2,37.1c51.4,7.2,98,30.5,134.8,67.2c34.9,34.9,57.8,79,66.1,127.5
+                              l36.9-6.3C470.854,169.3,444.354,118.3,403.954,77.8z"
+                                />
+                              </g>
+                            </g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                          </svg>
+                        </span>
+                        +998 (97) 929-59-58
+                      </li>
+                      <li class="nav-item" data-aos="fade-right">
+                        <span class="icon"
+                          ><?xml version="1.0" encoding="iso-8859-1"?>
+                          <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                          <svg
+                            version="1.1"
+                            id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 480.56 480.56"
+                            style="enable-background: new 0 0 480.56 480.56"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M365.354,317.9c-15.7-15.5-35.3-15.5-50.9,0c-11.9,11.8-23.8,23.6-35.5,35.6c-3.2,3.3-5.9,4-9.8,1.8
+                              c-7.7-4.2-15.9-7.6-23.3-12.2c-34.5-21.7-63.4-49.6-89-81c-12.7-15.6-24-32.3-31.9-51.1c-1.6-3.8-1.3-6.3,1.8-9.4
+                              c11.9-11.5,23.5-23.3,35.2-35.1c16.3-16.4,16.3-35.6-0.1-52.1c-9.3-9.4-18.6-18.6-27.9-28c-9.6-9.6-19.1-19.3-28.8-28.8
+                              c-15.7-15.3-35.3-15.3-50.9,0.1c-12,11.8-23.5,23.9-35.7,35.5c-11.3,10.7-17,23.8-18.2,39.1c-1.9,24.9,4.2,48.4,12.8,71.3
+                              c17.6,47.4,44.4,89.5,76.9,128.1c43.9,52.2,96.3,93.5,157.6,123.3c27.6,13.4,56.2,23.7,87.3,25.4c21.4,1.2,40-4.2,54.9-20.9
+                              c10.2-11.4,21.7-21.8,32.5-32.7c16-16.2,16.1-35.8,0.2-51.8C403.554,355.9,384.454,336.9,365.354,317.9z"
+                                />
+                                <path
+                                  d="M346.254,238.2l36.9-6.3c-5.8-33.9-21.8-64.6-46.1-89c-25.7-25.7-58.2-41.9-94-46.9l-5.2,37.1
+                              c27.7,3.9,52.9,16.4,72.8,36.3C329.454,188.2,341.754,212,346.254,238.2z"
+                                />
+                                <path
+                                  d="M403.954,77.8c-42.6-42.6-96.5-69.5-156-77.8l-5.2,37.1c51.4,7.2,98,30.5,134.8,67.2c34.9,34.9,57.8,79,66.1,127.5
+                              l36.9-6.3C470.854,169.3,444.354,118.3,403.954,77.8z"
+                                />
+                              </g>
+                            </g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                          </svg>
+                        </span>
+                        +998 (97) 929-59-58
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav mt-3">
+                      <li class="nav-item" data-aos="fade-right">
+                        <span class="icon"
+                          ><?xml version="1.0" encoding="iso-8859-1"?>
+                          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                          <svg
+                            version="1.1"
+                            id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="460.298px"
+                            viewBox="0 0 460.298 460.297"
+                            style="enable-background: new 0 0 460.298 460.297"
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041
+                              c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629
+                              c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939
+                              z"
+                                />
+                                <path
+                                  d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816
+                              c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245
+                              c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136
+                              c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998
+                              L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125
+                              c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"
+                                />
+                              </g>
+                            </g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                          </svg>
+                        </span>
+                        &nbspSamarqand&nbsp shahar &nbsp "O`zbektrakt"&nbsp
+                        ko`chasi&nbsp 33-uy
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-left">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3069.539181597634!2d66.9952043!3d39.7050639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d19467f234a75%3A0xbcc7189468c09a4!2sELEKTRO%20TEXNIK%20KOMPLEKS%20MCHJ!5e0!3m2!1sru!2s!4v1621668465151!5m2!1sru!2s"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ easing: "ease-in-out-sine", once: true });
+    </script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
